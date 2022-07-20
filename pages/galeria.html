@@ -7,80 +7,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>X NADA - Sitio Oficial | GALERÍA</title>
   <link rel="shortcut icon" href="../medios/icono/logo.ico" type="image/x-icon">
+  <!-- CSS only CSS BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- CSS PROPIO -->
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
   <!----------------------------------------Inicio Header ------------------------------------------------>
-  <header class="flex">
-    <picture class="header__logo">
-      <a href="../index.html"><img class="header__img" src="../medios/logos/logofondoblancochico.jpg" alt="logo"></a>
-    </picture>
-    <nav class="navigation">
-      <ul class="menu">
-        <li class="menu__item">
-          <a class="menu__link" href="../index.html">HOME</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="fechas.html">FECHAS</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="discografia.html">DISCOGRAFÍA</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="galeria.html">GALERÍA</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="contacto.html">CONTACTO</a>
-        </li>
-      </ul>
+
+  <header>
+    <nav class="navbar navbar-expand-lg nav__color">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img class="header__img header__galleryimg" src="../medios/logos/logofondoblancochico.jpg" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto menu__link">
+            <a class="nav-link" href="../index.html">HOME</a>
+            <a class="nav-link" href="./fechas.html">FECHAS</a>
+            <a class="nav-link" href="./discografia.html">DISCOGRAFÍA</a>
+            <a class="nav-link" href="./galeria.html">GALERÍA</a>
+            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+          </div>
+        </div>
+      </div>
     </nav>
+
   </header>
   <!----------------------------------------Fin Header ------------------------------------------------>
 
-  <main class="container">
-    <section id="gallery" class="gallery">
-      <picture class="gallery__img">
-        <img src="../medios/fotos/TeatroTapiales.jpg" alt="TeatroTapiales">
-      </picture>
-      <picture class="gallery__img">
-        <img src="../medios/fotos/TeatroTapiales2.jpg" alt="TeatroTapiales2">
-      </picture>
-      <picture class="gallery__img">
-        <img src="../medios/fotos/TeatroTapiales3.jpg" alt="TeatroTapiales3">
-      </picture>
-      <picture class="gallery__img">
-        <img src="../medios/fotos/Makena.jpg" alt="Makena">
-      </picture>
-      <picture class="gallery__img">
-        <img src="../medios/fotos/Makena1.jpg" alt="Makena1">
-      </picture>
-      <picture class="gallery__img">
-        <img src="../medios/fotos/FondoPagina.jpg" alt="TeatroTapiales4">
-      </picture>
-    </section>
+  <main class="container__gallery container__gallery img">
+   
+    <img class="img__1" src="../medios/fotos/TeatroTapiales.jpg" alt="TeatroTapiales">
+  
+    <img class="img__2" src="../medios/fotos/TeatroTapiales2.jpg" alt="TeatroTapiales2">
+    
+    <img class="img__3" src="../medios/fotos/TeatroTapiales3.jpg" alt="TeatroTapiales3">
+  
+    <img class="img__4" src="../medios/fotos/Makena.jpg" alt="Makena">
+   
+    <img class="img__5" src="../medios/fotos/Makena1.jpg" alt="Makena1">
+   
+    <img class="img__6" src="../medios/fotos/FondoPagina.jpg" alt="TeatroTapiales4">
+    
   </main>
 
 
 
-  <!-- FOOTER -->
-  <footer id="site__foooter">
-    <div class="Copy">
-      <h3>Copyrigth © 2022 - X NADA</h3>
-    </div>
-    <div class="RedesSociales">
+  <!---------------------------------------- Inicio Footer ------------------------------------------------>
+
+  <footer id="footer__index">
+    <div class="redes_socialesgalleryDesk redes_socialesgalleryMob">
       <a href="https://www.instagram.com/por.nadarock" target="_blank"> <span class="iconify"
-          data-icon="brandico:instagram" data-width="38" style="color:rgba(0, 0, 0, 0.768)"></span>
-        <a href="https://www.facebook.com/PORNADA" target="_blank"> <span class="iconify"
-            data-icon="foundation:social-facebook" style="color:rgba(0, 0, 0, 0.768)"></span>
-          <a href="https://www.youtube.com/channel/UCGLEFWQJIY_dL7CyTJEeutw" target="_blank"><span class="iconify"
-              data-icon="foundation:social-youtube" style="color:rgba(0, 0, 0, 0.768)"></span>
+          data-icon="typcn:social-instagram" style="color:rgba(0, 0, 0, 0.768)"></span></a>
+      <a href="https://www.facebook.com/PORNADA" target="_blank"> <span class="iconify"
+            data-icon="foundation:social-facebook" style="color:rgba(0, 0, 0, 0.768)"></span></a>
+      <a href="https://www.youtube.com/channel/UCGLEFWQJIY_dL7CyTJEeutw" target="_blank"><span class="iconify"
+              data-icon="foundation:social-youtube" style="color:rgba(0, 0, 0, 0.768)"></span></a>
+
+      <h3 class="Copy__galleryMob">Copyrigth © 2022 - X NADA</h3>
     </div>
 
+
   </footer>
+
+  <!---------------------------------------- Fin Footer ------------------------------------------------>
+
   <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

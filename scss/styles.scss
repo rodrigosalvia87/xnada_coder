@@ -123,14 +123,15 @@ footer {
   padding: 2rem;
 }
 
-.tittle__pagina {
-  font-size: 6rem;
+.title__fechas {
+  font-size: 5rem;
   text-align: center;
   padding: 4rem;
+  padding-bottom: 5rem;
 }
 
 
-.table__tittle {
+.table__title {
   font-size: 3em;
 
 }
@@ -147,16 +148,21 @@ footer {
   font-weight: 600;
 }
 
+a{
+  text-decoration: none;
+}
+
 .boton__ticket:hover {
   background-color: rgb(2, 129, 114);
   border-color: black;
-  text-decoration: none;
 }
 
 /* ------------------------------- Fin Fechas ---------------------------------- */
 
-/* Mobile */
-/*Home*/
+/* RESPONSIVE */
+
+/* Mobile - Home */
+
 @media only screen and (max-width: 480px) {
  
   .body{
@@ -176,7 +182,7 @@ footer {
   .backg__img{
     padding-top: 2rem;
     padding-bottom: 5rem;
-    width: 375px;
+    width: 350px;
   }
   .redes_socialesgalleryMob {
     font-size: 5px;
@@ -186,19 +192,11 @@ footer {
     font-size: small;
   }
 
-
 }
 
-/* Tablet */
-/*Home*/
+/* Tablet - Home */
 
 @media only screen and (min-width: 481px) and (max-width: 978px) {
-
-  /* body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  } */
 
   .header__galleryimg {
     max-width: 100px;
@@ -215,23 +213,15 @@ footer {
     padding-bottom: 5rem;
     width: 800px;
   }
-  /* .backg__Desk {
-    /* display: flex;
-    flex-direction: column;
-    text-align: center;
-    flex-wrap: nowrap; */
-    /*  height: 500px;
-      width: 400px; */
-    /* width: 100%; */
-  /* } */
+  
 
   .redes_socialesgalleryMob {
     font-size: 3rem;
   }
 }
 
-/* Mobile */
-/*Galeria*/
+/* Mobile - Galeria */
+
 @media only screen and (max-width: 480px) {
   
   .body{
@@ -272,8 +262,8 @@ footer {
 }
 
 
-/* Tablet */
-/*Galeria*/
+/* Tablet - Galeria*/
+
 
 @media only screen and (min-width: 481px) and (max-width: 978px) {
   .container__gallery {
@@ -316,4 +306,39 @@ footer {
   .Copy__galleryTab {
     font-size: 1.5em;
   }
+}
+
+/* Mobile - Fechas */
+
+@media only screen and (max-width: 480px){
+  .container__fechas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title__fechas {
+    font-size: 2rem;
+    text-align: center;
+    padding: 4rem;
+    padding-bottom: 5rem;
+  }
+  .table__title {
+    font-size: 1em;
+    text-align: center;
+  
+  }
+  .tabla__fechas {
+    font-size: 0.7em
+  }
+  
+  
+  .boton__ticket {
+    background-color: rgb(243, 243, 243);
+    border-color: rgb(226, 162, 35);
+    color: black;
+    font-weight: 600;
+    font-size: 1em;
+  }
+
 }

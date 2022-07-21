@@ -1,128 +1,173 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 /*  img {
       width: 100%;
     } */
-.header__img {
-  max-width: 170px; }
 
-  .body__home {
-    max-height: 100vh;
-  }
+.header__img {
+  max-width: 170px;
+}
+
+.body__home {
+  max-height: 100vh;
+}
 
 /* ------------------------------- Inicio Index ---------------------------------- */
+
 .backg__Desk {
   /* background-color: rgba(111, 111, 60, 0.561);
     background-size: cover; */
   padding: 20px;
   text-align: center;
   /* margin: 0; */
-  /* max-width: 1200px; */ }
+  /* max-width: 1200px; */
+}
 
 .menu__link {
   color: black;
   font-size: 2em;
   transition: all 1s;
-  text-align: center; }
+  text-align: center;
+}
 
 footer {
   display: flex;
   align-items: center;
   flex-direction: column-reverse;
   justify-content: space-around;
-  padding: 2rem; }
+  padding: 2rem;
+}
 
 .redes_socialesgalleryDesk {
   font-size: 4rem;
-  text-align: center; }
+  text-align: center;
+
+}
 
 /* ------------------------------- Fin Index ---------------------------------- */
+
+
 /* ------------------------------- Inicio Galeria ---------------------------------- */
+
 .container__gallery {
   display: grid;
   grid-template-columns: repeat(2);
   grid-template-rows: repeat(3);
-  grid-template-areas: "img1 img2"
- "img3 img4"
- "img5 img6";
+  grid-template-areas:
+    "img1 img2"
+    "img3 img4"
+    "img5 img6";
   justify-content: center;
   gap: 1rem;
   background-position: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+
+}
 
 .tittle__pagina {
-  grid-area: "titulo"; }
+  grid-area: "titulo";
+}
+
 
 .img__1 {
-  grid-area: "img1"; }
+  grid-area: "img1";
+
+}
 
 .img__2 {
-  grid-area: "img2"; }
+  grid-area: "img2";
+}
 
 .img__3 {
-  grid-area: "img3"; }
+  grid-area: "img3";
+}
 
 .img__3 {
-  grid-area: "img3"; }
+  grid-area: "img3";
+}
 
 .img__4 {
-  grid-area: "img4"; }
+  grid-area: "img4";
+}
 
 .img__5 {
-  grid-area: "img5"; }
+  grid-area: "img5";
+}
 
 .img__6 {
-  grid-area: "img6"; }
+  grid-area: "img6";
+}
+
 
 .container__gallery img {
-  width: 500px; }
+  width: 500px;
+}
 
 /* ------------------------------- Fin Galeria ---------------------------------- */
+
+
 /* ------------------------------- Inicio Fechas ---------------------------------- */
+
 .container__fechas {
   text-align: center;
   margin: 0px auto;
   background-color: white;
-  padding: 2rem; }
+  padding: 2rem;
+}
 
 .tittle__pagina {
   font-size: 6rem;
   text-align: center;
-  padding: 4rem; }
+  padding: 4rem;
+}
+
 
 .table__tittle {
-  font-size: 3em; }
+  font-size: 3em;
+
+}
 
 .tabla__fechas {
-  font-size: 2.5em; }
+  font-size: 2.5em
+}
+
 
 .boton__ticket {
-  background-color: #f3f3f3;
-  border-color: #e2a223;
+  background-color: rgb(243, 243, 243);
+  border-color: rgb(226, 162, 35);
   color: black;
-  font-weight: 600; }
+  font-weight: 600;
+}
 
 .boton__ticket:hover {
-  background-color: #028172;
+  background-color: rgb(2, 129, 114);
   border-color: black;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 /* ------------------------------- Fin Fechas ---------------------------------- */
+
 /* Mobile */
 /*Home*/
 @media only screen and (max-width: 480px) {
   body {
     display: flex;
     flex-direction: column;
-    justify-content: space-around; }
+    justify-content: space-around;
+  }
+
   .header__galleryimg {
-    max-width: 100px; }
+    max-width: 100px;
+  }
+
   .backg__Desk {
     display: flex;
     flex-direction: column;
@@ -130,21 +175,34 @@ footer {
     flex-wrap: nowrap;
     /*  height: 500px;
       width: 400px; */
-    /* width: 100%; */ }
+    /* width: 100%; */
+  }
+
   .redes_socialesgalleryMob {
-    font-size: 3rem; }
+    font-size: 3rem;
+  }
+
   .Copy__galleryMob {
-    font-size: small; } }
+    font-size: small;
+  }
+
+}
 
 /* Tablet */
 /*Home*/
+
 @media only screen and (min-width: 481px) and (max-width: 978px) {
+
   body {
     display: flex;
     flex-direction: column;
-    justify-content: space-around; }
+    justify-content: space-around;
+  }
+
   .header__galleryimg {
-    max-width: 100px; }
+    max-width: 100px;
+  }
+
   .backg__Desk {
     display: flex;
     flex-direction: column;
@@ -152,58 +210,98 @@ footer {
     flex-wrap: nowrap;
     /*  height: 500px;
       width: 400px; */
-    /* width: 100%; */ }
+    /* width: 100%; */
+  }
+
   .redes_socialesgalleryMob {
-    font-size: 3rem; } }
+    font-size: 3rem;
+  }
+}
 
 /* Mobile */
 /*Galeria*/
 @media only screen and (max-width: 480px) {
+  
+  .body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  
   .container__gallery {
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: auto auto auto;
     grid-template-areas: "img1"
- "img2"
- "img3"
- "img4"
- "img5"
- "img6";
-    justify-content: center; }
+      "img2"
+      "img3"
+      "img4"
+      "img5"
+      "img6";
+    justify-content: center;
+  }
+
   .container__gallery img {
-    max-width: 45vh; }
+    max-width: 45vh;
+  }
+
   .header__galleryimg {
-    max-width: 100px; }
+    max-width: 100px;
+  }
+
   .redes_socialesgalleryMob {
-    font-size: 3rem; }
+    font-size: 3rem;
+  }
+
   .Copy__galleryMob {
-    font-size: small; } }
+    font-size: small;
+  }
+}
+
 
 /* Tablet */
 /*Galeria*/
+
 @media only screen and (min-width: 481px) and (max-width: 978px) {
   .container__gallery {
     display: grid;
     grid-template-columns: 2;
     grid-template-rows: auto auto auto;
     grid-template-areas: "img1 img2"
- "img3 img4"
- "img5 img6";
-    justify-content: center; }
+      "img3 img4"
+      "img5 img6";
+    justify-content: center;
+  }
+
   .container__gallery img {
-    max-width: 31vh; }
+    max-width: 31vh;
+  }
+
   .header__galleryimg {
-    max-width: 125px; }
+    max-width: 125px;
+  }
+
   .menu__link {
     color: black;
     font-size: 1.5em;
     transition: all 1s;
-    text-align: center; }
+    text-align: center;
+  }
+
   main {
-    padding-top: 5rem; }
+    padding-top: 5rem;
+  }
+
   footer {
-    padding-top: 5rem; }
+    padding-top: 5rem;
+  }
+
   .redes_socialesgalleryTab {
-    font-size: 4rem; }
+    font-size: 4rem;
+  }
+
   .Copy__galleryTab {
-    font-size: 1.5em; } }
+    font-size: 1.5em;
+  }
+}

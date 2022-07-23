@@ -98,7 +98,6 @@ html {
   grid-area: "titulo";
 }
 
-
 .img__1 {
   grid-area: "img1";
 }
@@ -185,15 +184,45 @@ a{
 .container__disc{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  justify-items: center
+}
+
+.Dosis{
+  grid-row: 1;
+  width: 80%;
+  height: 85%;
+ 
+}
+
+.Dosis__inf{
+  grid-column: 2;
+  width: 85%;
+  font-weight: 600;
+  font-size: large;
+  text-align: justify;
+  justify-items: center;
+  
 }
 
 
+.XNada{
+  grid-row: 2;
+  width: 80%;
+  height: 85%;
+}
 
+.Ion{
+  grid-row: 3;
+  width: 80%;
+  height: 85%;
+}
 
-
-
-
+.titulos__disc{
+  font-size: 4em;
+  text-align: left;
+}
 
 /* RESPONSIVE */
 
@@ -338,6 +367,9 @@ a{
   }
 }
 
+.tit__gal{
+  padding: bottom 1rem;
+}
 
 /* Tablet - Galeria*/
 

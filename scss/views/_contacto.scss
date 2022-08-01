@@ -1,0 +1,29 @@
+.box__NomMail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 350px);
+    gap: 1rem;
+    font-size: large;
+    font-weight: 500;
+    justify-items: stretch;
+    margin: 10px;
+}
+
+.img__contacto{
+    grid-column: 2;
+    max-width: 50%;
+    margin-left: 300px;
+  }
+
+  .btn__contacto{
+    background-color: rgb(101, 166, 227);
+    font-size: medium;
+    font-weight: 2px;
+    margin-top: 7px;
+    border-color:rgb(101, 166, 227);
+  }
+  .btn__contacto:hover {
+    background-color: rgb(83, 208, 191);
+    border-color: rgb(83, 208, 191);
+    text-decoration-color: black;
+}

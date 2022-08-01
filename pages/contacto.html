@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X NADA - Sitio Oficial | CONTACTO</title>
-    <link rel="shortcut icon" href="../medios/icono/logo.ico" type="image/x-icon">
-    <!-- CSS only CSS BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X NADA - Sitio Oficial | CONTACTO</title>
+  <link rel="shortcut icon" href="../medios/icono/logo.ico" type="image/x-icon">
+  <!-- CSS only CSS BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <!-- CSS PROPIO -->
-    <link rel="stylesheet" href="../css/styles.css">
-  </head>
+  <!-- CSS PROPIO -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+
+<!----------------------------------------Inicio Header ------------------------------------------------>
+
+<body>
   
-
-  <!----------------------------------------Inicio Header ------------------------------------------------>
-
   <header>
     <nav class="navbar navbar-expand-lg nav__color">
       <div class="container-fluid">
-        <a class="navbar-brand navbar-expand" href="index.html">
-          <img class="header__img header__galleryimg" src="../medios/logos/logofondoblancochico.jpg" alt="logo"></a>
+        <a class="navbar-brand navbar-expand" href="../index.html">
+          <img class="header__img header__galleryimg" src="../medios/logos/logofondoblancochico.jpg" alt="logoxnada"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -39,26 +42,38 @@
   </header>
   <!----------------------------------------Fin Header ------------------------------------------------>
 
-  <body class="BodyContacto">
-    <!-- FORMULARIO -->
-    <form action="">
-      <label for="nombre">NOMBRE</label>
-      <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
-      <br>
-      <br><!-- MODIFICAR EN CSS -->
-      <label for="mail">MAIL</label>
-      <input type="email" name="mail" id="mail" placeholder="Ingresa tu mail" required>
-      <br>
-      <br><!-- MODIFICAR EN CSS -->
-      <label for="comentario"></label>
-      <textarea name="comentario" id="comentario" placeholder="Mensaje" cols="30" rows="10"></textarea>
-      <br>
-      <br><!-- MODIFICAR EN CSS -->
-      <input type="submit">
-      <input type="reset">
+  <main>
+    <h1 class="title__fechas">CONTACTO</h1>
+    
+  <section class= "box__NomMail box__NomMailMob">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label form__Mob ">NOMBRE</label>
+      <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Ingresa tu Nombre">
+      <label for="exampleFormControlInput1" class="form-label form__Mob">APELLIDO</label>
+      <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Ingresa tu Apellido">
+      <label for="exampleFormControlInput1" class="form-label form__edad">EDAD</label>
+      <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Ingresa tu Edad">
+      <label for="exampleFormControlInput1" class="form-label form__pais">PAIS</label>
+      <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Ingresa tu País">
+      <label for="exampleFormControlInput1" class="form-label form__mail">MAIL</label>
+      <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Ingresa tu Mail">
+     
+    </div>
+    <div>
+      <img class="img__contacto img__contactoMob" src="../medios/fotos/persona_cara_por_nada_sf.png" alt="logonaranja">
+    </div>
 
-    </form>
-  </body>
+    <div class="mb-3 box__msj">
+      <label for="exampleFormControlTextarea1" class="form-label">DEJANOS TU MENSAJE</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" ></textarea>
+      <input class="btn btn-primary btn__contacto" type="submit" value="Enviar">
+      <input class="btn btn-primary btn__contacto" type="reset" value="Restablecer">
+</section>  
+    </div>
+  </main>
+
+  
+
 
   <!---------------------------------------- Inicio Footer ------------------------------------------------>
 
@@ -85,6 +100,6 @@
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
 
-
+</body>
 
 </html>

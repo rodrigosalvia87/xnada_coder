@@ -6,35 +6,11 @@
 html {
   font-size: 62.5%; }
 
-/*  img {
-      width: 100%;
-    } */
-.header__img {
-  max-width: 170px; }
-
 .body__home {
   max-height: 100vh; }
 
-/* ------------------------------- Inicio Home ---------------------------------- */
-/* .container__home{
-  display: grid;
-  
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(1, 2fr);
-}
-
-.fondo__img{
-  grid-column: 1/13;
-  align-items: center;
-  
-} */
-.backg__Desk {
-  /* background-color: rgba(111, 111, 60, 0.561);
-    background-size: cover; */
-  padding: 20px;
-  text-align: center;
-  /* margin: 0; */
-  /* max-width: 1200px; */ }
+.header__img {
+  max-width: 170px; }
 
 .menu__link {
   color: black;
@@ -42,26 +18,31 @@ html {
   transition: all 1s;
   text-align: center; }
 
-/* footer {
-  display: flex;
-  align-items: center;
-  flex-direction: column-reverse;
-  justify-content: space-around;
-  padding: 2rem;
-} */
 #footer__index {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 50px); }
+  grid-template-rows: repeat(4, 50px); }
 
 .redes_socialesgalleryDesk {
   font-size: 4rem;
   text-align: center;
   grid-column: 1/3;
-  grid-row: 1; }
+  grid-row: 4; }
 
-/* ------------------------------- Fin Home ---------------------------------- */
-/* ------------------------------- Inicio Galeria ---------------------------------- */
+.fondo__img {
+  grid-column: 1/13;
+  align-items: center; }
+
+.backg__Desk {
+  padding: 20px;
+  text-align: center; }
+
+.txt__bio {
+  display: flex justify-content center;
+  flex-direction: column;
+  text-align: justify;
+  font-size: 2em; }
+
 .container__gallery {
   display: grid;
   grid-template-columns: repeat(2);
@@ -78,29 +59,54 @@ html {
 .img__1 {
   grid-area: "img1"; }
 
+.img__1:hover {
+  grid-area: "img1";
+  transform: scale(1.2);
+  transition: 1.5s; }
+
 .img__2 {
   grid-area: "img2"; }
 
-.img__3 {
-  grid-area: "img3"; }
+.img__2:hover {
+  grid-area: "img1";
+  transform: scale(1.2);
+  transition: 1.5s; }
 
 .img__3 {
   grid-area: "img3"; }
+
+.img__3:hover {
+  grid-area: "img1";
+  transform: scale(1.2);
+  transition: 1.5s; }
 
 .img__4 {
   grid-area: "img4"; }
 
+.img__4:hover {
+  grid-area: "img1";
+  transform: scale(1.2);
+  transition: 1.5s; }
+
 .img__5 {
   grid-area: "img5"; }
+
+.img__5:hover {
+  grid-area: "img1";
+  transform: scale(1.2);
+  transition: 1.5s; }
 
 .img__6 {
   grid-area: "img6"; }
 
+.img__6:hover {
+  grid-area: "img1";
+  transform: scale(1.2);
+  transition: 1.5s; }
+
 .container__gallery img {
   width: 500px; }
 
-/* ------------------------------- Fin Galeria ---------------------------------- */
-/* ------------------------------- Inicio Fechas ---------------------------------- */
 .container__fechas {
   text-align: center;
   margin: 0px auto;
@@ -134,8 +140,6 @@ a {
   border-color: black;
   text-decoration-color: black; }
 
-/* ------------------------------- Fin Fechas ---------------------------------- */
-/* ------------------------------- Inicio Discografia ---------------------------------- */
 .container__disc {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -192,28 +196,55 @@ a {
   width: 80%;
   height: 175%; }
 
+.box__NomMail {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 350px);
+  gap: 1rem;
+  font-size: large;
+  font-weight: 500;
+  justify-items: stretch;
+  margin: 10px; }
+
+.img__contacto {
+  grid-column: 2;
+  max-width: 50%;
+  margin-left: 300px; }
+
+.btn__contacto {
+  background-color: #65a6e3;
+  font-size: medium;
+  font-weight: 2px;
+  margin-top: 7px;
+  border-color: #65a6e3; }
+
+.btn__contacto:hover {
+  background-color: #53d0bf;
+  border-color: #53d0bf;
+  text-decoration-color: black; }
+
 /* --------------------------------- RESPONSIVE -------------------------------------- */
 /* --------------------------------Mobile - Home ------------------------------------- */
 @media only screen and (max-width: 670px) {
   /*   .body{
-    padding-top: 1rem;
-  }
-  
-  .header__galleryimg {
-    max-width: 100px;
-  }
-
-  .backg__Mob {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .backg__img{
-    padding-top: 2rem;
-    padding-bottom: 5rem;
-    width: 350px;
-  } */
+        padding-top: 1rem;
+      }
+      
+      .header__galleryimg {
+        max-width: 100px;
+      }
+    
+      .backg__Mob {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .backg__img{
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+        width: 350px;
+      } */
   .body__home {
     margin-top: 1rem;
     padding: 0; }
@@ -380,13 +411,13 @@ a {
 
 @media only screen and (min-width: 754px) and (max-width: 820) {
   /* .container__fechasTab {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 8.5rem;
-    padding-bottom: 20rem;
-  }
- */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 8.5rem;
+        padding-bottom: 20rem;
+      }
+     */
   .title__fechas {
     font-size: 2.1em;
     text-align: center;
@@ -426,7 +457,9 @@ a {
     height: 100%; }
   .Dosis__txtMob {
     grid-column: 1/3;
-    grid-row: 2/3; }
+    grid-row: 2/3;
+    margin-left: 2rem;
+    text-align: justify; }
   .XNada__mob {
     grid-column: 1/3;
     grid-row: 3/4;
@@ -434,7 +467,9 @@ a {
     height: 100%; }
   .XNada__txtMob {
     grid-row: 4/5;
-    grid-column: 1/3; }
+    grid-column: 1/3;
+    margin-left: 2rem;
+    text-align: justify; }
   .Ion__mob {
     grid-column: 1/3;
     grid-row: 5/6;
@@ -442,7 +477,9 @@ a {
     height: 100%; }
   .Ion__txtMob {
     grid-row: 6/7;
-    grid-column: 1/3; }
+    grid-column: 1/3;
+    margin-left: 2rem;
+    text-align: justify; }
   .titulos__disc {
     font-size: 2em;
     text-align: justify; }
@@ -465,3 +502,86 @@ a {
     grid-row: 3/4;
     width: 100%;
     height: 100%; } }
+
+/* ----------------------------------- Tablet --------------------------------------*/
+/* Discografia */
+@media only screen and (min-width: 481px) and (max-width: 978px) {
+  .container__discMob {
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(8 50px); }
+  .title__fechasMob {
+    padding-bottom: 3.5rem; }
+  .discos__inf {
+    width: 85%;
+    font-weight: 600;
+    font-size: small;
+    text-align: justify;
+    justify-items: center; }
+  .Dosis__mob {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%; }
+  .Dosis__txtMob {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin-left: 2rem;
+    text-align: justify; }
+  .XNada__mob {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    width: 100%;
+    height: 100%; }
+  .XNada__txtMob {
+    grid-row: 4/5;
+    grid-column: 1/3;
+    margin-left: 2rem;
+    text-align: justify; }
+  .Ion__mob {
+    grid-column: 1/3;
+    grid-row: 5/6;
+    width: 100%;
+    height: 100%; }
+  .Ion__txtMob {
+    grid-row: 6/7;
+    grid-column: 1/3;
+    margin-left: 2rem;
+    text-align: justify; }
+  .titulos__disc {
+    font-size: 2em;
+    text-align: justify; }
+  .container__vidMob {
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(6 50px); }
+  .vagabundo__vidMob {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%; }
+  .despertares__vidMob {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%; }
+  .disturbio__vidMob {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    width: 100%;
+    height: 100%; } }
+
+/* ------------------------------------- Mobile - Contacto ------------------------------------ */
+@media only screen and (max-width: 480px) {
+  .box__NomMailMob {
+    display: flex;
+    flex-direction: column; }
+  .img__contactoMob {
+    display: none; } }
+
+@media only screen and (min-width: 481px) and (max-width: 991px) {
+  .box__NomMailMob {
+    display: flex;
+    flex-direction: column; }
+  .img__contactoMob {
+    display: none; } }

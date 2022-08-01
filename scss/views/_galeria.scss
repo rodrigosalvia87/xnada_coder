@@ -1,0 +1,88 @@
+.container__gallery {
+  display: grid;
+  grid-template-columns: repeat(2);
+  grid-template-rows: repeat(3);
+  grid-template-areas:
+    "img1 img2"
+    "img3 img4"
+    "img5 img6";
+  justify-content: center;
+  gap: 1rem;
+  background-position: center;
+  flex-wrap: wrap;
+
+}
+
+.tittle__pagina {
+  grid-area: "titulo";
+}
+
+.img__1 {
+  grid-area: "img1";
+}
+
+.img__1:hover {
+  grid-area: "img1";
+  transform: scale(1.20);
+  transition: 1.5s;
+}
+
+
+.img__2 {
+  grid-area: "img2";
+}
+
+.img__2:hover {
+  grid-area: "img1";
+  transform: scale(1.20);
+  transition: 1.5s
+}
+
+
+.img__3 {
+  grid-area: "img3";
+}
+
+.img__3:hover {
+  grid-area: "img1";
+  transform: scale(1.20);
+  transition: 1.5s
+}
+
+
+.img__4 {
+  grid-area: "img4";
+}
+
+.img__4:hover {
+  grid-area: "img1";
+  transform: scale(1.20);
+  transition: 1.5s
+}
+
+
+.img__5 {
+  grid-area: "img5";
+}
+
+.img__5:hover {
+  grid-area: "img1";
+  transform: scale(1.20);
+  transition: 1.5s
+}
+
+
+.img__6 {
+  grid-area: "img6";
+}
+
+
+.img__6:hover {
+  grid-area: "img1";
+  transform: scale(1.20);
+  transition: 1.5s
+}
+
+.container__gallery img {
+  width: 500px;
+}

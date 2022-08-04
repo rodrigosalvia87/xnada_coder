@@ -11,78 +11,65 @@
   background-position: center;
   flex-wrap: wrap;
 
+  & img {
+    width: 500px;
+
+    &__1 {
+      grid-area: "img1";
+
+    }
+
+    &__2 {
+      grid-area: "img2";
+    }
+
+    &__3 {
+      grid-area: "img3";
+    }
+
+    &__4 {
+      grid-area: "img4";
+    }
+
+    &__5 {
+      grid-area: "img5";
+    }
+
+    &__6 {
+      grid-area: "img6";
+    }
+
+  }
 }
 
-.tittle__pagina {
-  grid-area: "titulo";
-}
+:hover {
+  .img__1:hover {
+    transform: scale(1.20);
+    transition: 1.5s;
+  }
 
-.img__1 {
-  grid-area: "img1";
-}
+  .img__2:hover {
+    transform: scale(1.20);
+    transition: 1.5s
+  }
 
-.img__1:hover {
-  grid-area: "img1";
-  transform: scale(1.20);
-  transition: 1.5s;
-}
+  .img__3:hover {
+    transform: scale(1.20);
+    transition: 1.5s
+  }
 
+  .img__4:hover {
+    transform: scale(1.20);
+    transition: 1.5s
+  }
 
-.img__2 {
-  grid-area: "img2";
-}
+  .img__5:hover {
+    transform: scale(1.20);
+    transition: 1.5s
+  }
 
-.img__2:hover {
-  grid-area: "img1";
-  transform: scale(1.20);
-  transition: 1.5s
-}
-
-
-.img__3 {
-  grid-area: "img3";
-}
-
-.img__3:hover {
-  grid-area: "img1";
-  transform: scale(1.20);
-  transition: 1.5s
-}
-
-
-.img__4 {
-  grid-area: "img4";
-}
-
-.img__4:hover {
-  grid-area: "img1";
-  transform: scale(1.20);
-  transition: 1.5s
-}
-
-
-.img__5 {
-  grid-area: "img5";
-}
-
-.img__5:hover {
-  grid-area: "img1";
-  transform: scale(1.20);
-  transition: 1.5s
-}
-
-
-.img__6 {
-  grid-area: "img6";
-}
-
-
-.img__6:hover {
-  grid-area: "img1";
-  transform: scale(1.20);
-  transition: 1.5s
-}
-
-.container__gallery img {
-  width: 500px;
+  .img__6:hover {
+    transform: scale(1.20);
+    transition: 1.5s
+  }
 }

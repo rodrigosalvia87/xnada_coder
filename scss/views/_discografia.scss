@@ -1,66 +1,61 @@
-.container__disc{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 1rem;
-    justify-items: center;  
-  }
-  
-  .Dosis{
-    grid-row: 1;
-    width: 80%;
-    height: 85%;
-  }
-  
-  .discos__inf{
-    grid-column: 2;
-    width: 85%;
-    font-weight: 600;
-    font-size: large;
-    text-align: justify;
-    justify-items:stretch;
-  }
-  
-  .XNada{
-    grid-row: 2;
-    width: 80%;
-    height: 85%;
-  }
-  
-  .Ion{
-    grid-row: 3;
-    width: 80%;
-    height: 85%;
-  }
-  
-  .titulos__disc{
-    font-size: 4em;
-    text-align: left;
-  }
-  
-  .container__vid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 0.5rem;
-    justify-items: center;
-  }
-  
-  .vagabundo__vid{
-    grid-column: 1;
-    width: 80%;
-    height: 175%;
-  }
-  
-  
-  .despertares__vid{
-    grid-column: 2;
-    width: 80%;
-    height: 175%;
-  }
-  
-  .disturbio__vid{
-    grid-column: 3;
-    width: 80%;
-    height: 175%;
-  }
+.container__disc {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  justify-items: center;
+}
+
+.Dosis {
+  grid-row: 1;
+  width: 80%;
+  height: 85%;
+}
+
+.XNada {
+  grid-row: 2;
+  @extend .Dosis
+}
+
+.Ion {
+  grid-row: 3;
+  @extend .Dosis
+}
+
+.discos__inf {
+  grid-column: 2;
+  width: 85%;
+  font-weight: 600;
+  font-size: large;
+  text-align: justify;
+  justify-items: stretch;
+}
+
+.titulos__disc {
+  font-size: $text-large1;
+  text-align: left;
+}
+
+.container__vid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.5rem;
+  justify-items: center;
+}
+
+.vagabundo__vid {
+  grid-column: 1;
+  width: 80%;
+  height: 175%;
+}
+
+.despertares__vid {
+  grid-column: 2;
+  @extend .vagabundo__vid
+}
+
+.disturbio__vid {
+  grid-column: 3;
+  @extend .vagabundo__vid
+}

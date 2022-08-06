@@ -100,6 +100,9 @@ html {
   padding: 4rem;
   padding-bottom: 5rem; }
 
+.table__margin {
+  margin-top: 5rem; }
+
 .table__title {
   font-size: 3em; }
 
@@ -200,7 +203,7 @@ html {
   .container__home {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, 60px); }
+    grid-template-rows: repeat(5, 50px); }
   .fondo__img {
     grid-row: 2/6; }
   #footer__index {
@@ -218,7 +221,10 @@ html {
     font-size: small;
     grid-row: 8; }
   .txt__mob {
-    font-size: 1.5em; } }
+    font-size: 1.5em; }
+  .align__mob {
+    padding-top: 70px;
+    padding-bottom: 0; } }
 
 /* ---------------------------------- Tablet - Home ----------------------------------- */
 @media only screen and (min-width: 481px) and (max-width: 991px) {
@@ -233,7 +239,10 @@ html {
     padding-bottom: 5rem;
     width: 800px; }
   .redes_socialesgalleryMob {
-    font-size: 3rem; } }
+    font-size: 3rem; }
+  .align__mob {
+    padding-top: 95px;
+    padding-bottom: 0; } }
 
 /* ------------------------------------- Mobile - Galeria ------------------------------------ */
 @media only screen and (max-width: 480px) {

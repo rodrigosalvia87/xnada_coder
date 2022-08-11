@@ -110,15 +110,16 @@ html {
   font-size: 2.5em; }
 
 .boton__ticket {
-  background-color: #f3f3f3;
-  border-color: #e2a223;
-  color: black;
-  font-weight: 600; }
+  background-color: #d9c487;
+  border-color: #d9c487;
+  color: #06060b;
+  font-size: large;
+  font-weight: 700; }
   .boton__ticket a {
     text-decoration: none; }
   .boton__ticket:hover {
-    background-color: #aee5de;
-    border-color: black; }
+    background-color: #53d0bf;
+    border-color: #53d0bf; }
 
 .container__disc {
   display: grid;
@@ -184,11 +185,14 @@ html {
   margin-left: 300px; }
 
 .btn__contacto {
-  background-color: #65a6e3;
+  background-color: #d9c487;
   font-size: medium;
   font-weight: 2px;
+  color: #06060b;
+  font-weight: 700;
   margin-top: 7px;
-  border-color: #65a6e3; }
+  border-color: #d9c487;
+  text-decoration: none; }
   .btn__contacto:hover {
     background-color: #53d0bf;
     border-color: #53d0bf;
@@ -335,10 +339,10 @@ html {
   .tabla__fechas {
     font-size: 0.9em; }
   .boton__ticket {
-    background-color: #f3f3f3;
-    border-color: #e2a223;
-    color: black;
-    font-weight: 600;
+    background-color: #d9c487;
+    border-color: #d9c487;
+    color: #06060b;
+    font-weight: 700;
     font-size: 1em; }
   .Copy__galleryMob {
     font-size: small; } }

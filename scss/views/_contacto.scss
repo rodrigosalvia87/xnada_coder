@@ -16,11 +16,14 @@
 }
 
 .btn__contacto {
-  background-color: rgb(101, 166, 227);
+  background-color: #d9c487;
   font-size: medium;
   font-weight: 2px;
+  color: #06060b;
+  font-weight:700;
   margin-top: 7px;
-  border-color: rgb(101, 166, 227);
+  border-color: #d9c487;
+  text-decoration: none;
 
   &:hover {
     background-color: rgb(83, 208, 191);

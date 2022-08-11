@@ -26,18 +26,19 @@ margin-top: 5rem;
 
 
 .boton__ticket {
-  background-color: rgb(243, 243, 243);
-  border-color: rgb(226, 162, 35);
-  color: black;
-  font-weight: 600;
+  background-color: #d9c487;
+  border-color: #d9c487;
+  color: #06060b;
+  font-size: large;
+  font-weight:700;
 
   a {
     text-decoration: none;
   }
 
   &:hover {
-    background-color: rgb(174, 229, 222);
-    border-color: black;
+    background-color: rgb(83, 208, 191);
+    border-color: rgb(83, 208, 191);
   }
 
 }

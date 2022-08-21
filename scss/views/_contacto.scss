@@ -1,3 +1,8 @@
+.container__contacto{
+  margin: 0px auto;
+  padding: 2rem;
+}
+
 .box__NomMail {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -16,19 +21,14 @@
 }
 
 .btn__contacto {
-  background-color: #d9c487;
+  @include boton;
   font-size: medium;
-  font-weight: 2px;
-  color: #06060b;
-  font-weight:700;
   margin-top: 7px;
-  border-color: #d9c487;
   text-decoration: none;
 
   &:hover {
     background-color: rgb(83, 208, 191);
     border-color: rgb(83, 208, 191);
-    text-decoration-color: black;
   }
 
 }

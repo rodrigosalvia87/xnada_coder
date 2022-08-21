@@ -10,9 +10,7 @@
   }
 
   .container__home {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, 50px);
+    @include grid (grid, repeat(1, 1fr), repeat(5, 50px), none, none, none)
   }
 
   .fondo__img {
@@ -20,9 +18,7 @@
   }
 
   #footer__index {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 60px);
+    @include grid (grid, repeat(2, 1fr), repeat(2, 60px), none, none, none)
   }
 
   .redes_socialesgalleryDesk {
@@ -45,7 +41,12 @@
   .txt__mob {
     font-size: $text-small;
   }
-  .align__mob{
+
+  .title__fechasMob {
+    padding-top: 10rem;
+  }
+
+  .align__mob {
     padding-top: 70px;
     padding-bottom: 0;
   }
@@ -61,9 +62,7 @@
   }
 
   .backg__Tab {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex (flex, column, center);
   }
 
   .backgTab__img {
@@ -76,11 +75,10 @@
     font-size: 3rem;
   }
 
-  .align__mob{
+  .align__mob {
     padding-top: 95px;
     padding-bottom: 0;
   }
-
 
 }
 
@@ -89,18 +87,14 @@
 /* ------------------------------------- Mobile - Galeria ------------------------------------ */
 
 @media only screen and (max-width: 480px) {
+  @media (hover: none) {
+    #img__hovernone {
+      @include hover-none;
+    }
+  }
 
   .container__gallery {
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "img1"
-      "img2"
-      "img3"
-      "img4"
-      "img5"
-      "img6";
-    justify-content: center;
+    @include grid (grid, 1, (auto auto auto), none, center, none)
   }
 
   .container__gallery img {
@@ -124,17 +118,20 @@
   padding: bottom 1rem;
 }
 
+
+
+
 /* ----------------------------- Tablet - Galeria ----------------------------------------*/
 
 @media only screen and (min-width: 979px) and (max-width: 1026px) {
+  @media (hover: none) {
+    #img__hovernone {
+      @include hover-none;
+    }
+  }
+
   .container__gallery {
-    display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "img1 img2"
-      "img3 img4"
-      "img5 img6";
-    justify-content: center;
+    @include grid (grid, 2, (auto auto auto), none, center, "img1 img2""img3 img4""img5 img6")
   }
 
   .container__gallery img {
@@ -143,13 +140,6 @@
 
   .header__galleryimg {
     max-width: 125px;
-  }
-
-  .menu__link {
-    color: black;
-    font-size: 1.5em;
-    transition: all 1s;
-    text-align: center;
   }
 
   main {
@@ -171,14 +161,14 @@
 }
 
 @media only screen and (min-width: 481px) and (max-width: 978px) {
+  @media (hover: none) {
+    #img__hovernone {
+      @include hover-none;
+    }
+  }
+
   .container__gallery {
-    display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "img1 img2"
-      "img3 img4"
-      "img5 img6";
-    justify-content: center;
+    @include grid (grid, 2, (auto auto auto), none, center, ("img1 img2""img3 img4""img5 img6"))
   }
 
   .container__gallery img {
@@ -187,13 +177,6 @@
 
   .header__galleryimg {
     max-width: 125px;
-  }
-
-  .menu__link {
-    color: black;
-    font-size: 1.5em;
-    transition: all 1s;
-    text-align: center;
   }
 
   main {
@@ -213,15 +196,22 @@
   }
 }
 
+
+@media only screen and (min-width: 1027px) and (max-width: 1280px) {
+  @media (hover: none) {
+    #img__hovernone {
+      @include hover-none;
+    }
+  }
+}
+
 /* ----------------------------------- Mobile - Fechas -------------------------------------*/
 /* Fechas */
 
 @media only screen and (max-width: 480px) {
 
   .container__fechas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex (flex, column, center);
     padding-top: 8.5rem;
     padding-bottom: 10rem;
   }
@@ -245,10 +235,7 @@
 
 
   .boton__ticket {
-    background-color: #d9c487;
-    border-color: #d9c487;
-    color: #06060b;
-    font-weight: 700;
+    @include boton;
     font-size: 1em;
   }
 
@@ -264,9 +251,7 @@
 @media only screen and (min-width: 481px) and (max-width: 753) {
 
   .container__fechas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex (flex, column,center);
     padding-top: 8.5rem;
     padding-bottom: 10rem;
   }
@@ -287,16 +272,6 @@
   .tabla__fechas {
     font-size: 0.9em
   }
-
-
-  .boton__ticket {
-    background-color: rgb(243, 243, 243);
-    border-color: rgb(226, 162, 35);
-    color: black;
-    font-weight: 600;
-    font-size: 1em;
-  }
-
 
 }
 
@@ -319,15 +294,6 @@
     font-size: 0.9em
   }
 
-
-  .boton__ticket {
-    background-color: rgb(243, 243, 243);
-    border-color: rgb(226, 162, 35);
-    color: black;
-    font-weight: 600;
-    font-size: 1em;
-  }
-
 }
 
 /* ----------------------------------- Mobile --------------------------------------*/
@@ -337,9 +303,7 @@
 @media only screen and (max-width: 480px) {
 
   .container__discMob {
-    display: grid;
-    grid-template-columns: repeat(2);
-    grid-template-rows: repeat(8 50px);
+    @include grid (grid, repeat(2), repeat(8 50px), none, none, none);
   }
 
   .title__fechasMob {
@@ -354,7 +318,7 @@
     justify-items: center;
   }
 
-  .Dosis__mob {
+  .Dosis__mob {      
     grid-column: 1/3;
     grid-row: 1/2;
     width: 100%;
@@ -371,8 +335,7 @@
   .XNada__mob {
     grid-column: 1/3;
     grid-row: 3/4;
-    width: 100%;
-    height: 100%;
+    @extend .Dosis__mob;
   }
 
   .XNada__txtMob {
@@ -385,8 +348,8 @@
   .Ion__mob {
     grid-column: 1/3;
     grid-row: 5/6;
-    width: 100%;
-    height: 100%;
+    @extend .Dosis__mob;
+    
   }
 
   .Ion__txtMob {
@@ -397,14 +360,13 @@
   }
 
   .titulos__disc {
-    font-size: 2em;
+    font-size: $text-small1;
     text-align: justify;
   }
 
   .container__vidMob {
-    display: grid;
-    grid-template-columns: repeat(2);
-    grid-template-rows: repeat(6 50px);
+    @include grid (grid, repeat(2), repeat(6 50px), none, none, none);
+    
   }
 
   .vagabundo__vidMob {
@@ -417,15 +379,14 @@
   .despertares__vidMob {
     grid-column: 1/4;
     grid-row: 2/3;
-    width: 100%;
-    height: 100%;
+    @extend .vagabundo__vidMob;
+   
   }
 
   .disturbio__vidMob {
     grid-column: 1/4;
     grid-row: 3/4;
-    width: 100%;
-    height: 100%;
+    @extend .vagabundo__vidMob;
   }
 
 }
@@ -438,9 +399,7 @@
 @media only screen and (min-width: 481px) and (max-width: 978px) {
 
   .container__discMob {
-    display: grid;
-    grid-template-columns: repeat(2);
-    grid-template-rows: repeat(8 50px);
+    @include grid (grid, repeat(2), repeat(8 50px), none, none, none);
   }
 
   .title__fechasMob {
@@ -498,14 +457,12 @@
   }
 
   .titulos__disc {
-    font-size: 2em;
+    font-size: $text-small1;
     text-align: justify;
   }
 
-  .container__vidMob {
-    display: grid;
-    grid-template-columns: repeat(2);
-    grid-template-rows: repeat(6 50px);
+  .container__vidMob {  
+    @include grid (grid, repeat(2), repeat(6 50px), none, none, none);
   }
 
   .vagabundo__vidMob {
@@ -535,9 +492,7 @@
 @media only screen and (max-width: 480px) {
 
   .box__NomMailMob {
-    display: flex;
-    flex-direction: column;
-
+    @include flex (flex, column,none);
   }
 
   .img__contactoMob {
@@ -547,9 +502,7 @@
 
 @media only screen and (min-width: 481px) and (max-width: 991px) {
   .box__NomMailMob {
-    display: flex;
-    flex-direction: column;
-
+    @include flex (flex, column,none);
   }
 
   .img__contactoMob {

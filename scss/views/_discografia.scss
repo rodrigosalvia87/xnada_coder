@@ -1,9 +1,5 @@
 .container__disc {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 1rem;
-  justify-items: center;
+  @include grid (grid,repeat(2, 1fr),repeat(3, 1fr),1rem,center, none)
 }
 
 .Dosis {
@@ -37,11 +33,7 @@
 }
 
 .container__vid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 0.5rem;
-  justify-items: center;
+  @include grid (grid,repeat(3, 1fr),repeat(2, 1fr),0.5rem,center, none)
 }
 
 .vagabundo__vid {

@@ -1,13 +1,6 @@
 .container__gallery {
-  display: grid;
-  grid-template-columns: repeat(2);
-  grid-template-rows: repeat(3);
-  grid-template-areas:
-    "img1 img2"
-    "img3 img4"
-    "img5 img6";
+  @include grid (grid, repeat(2), repeat(3), 1rem, none, ("img1 img2""img3 img4""img5 img6"));
   justify-content: center;
-  gap: 1rem;
   background-position: center;
   flex-wrap: wrap;
 

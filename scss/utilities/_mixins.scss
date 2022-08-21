@@ -1,0 +1,33 @@
+/* Botones */
+
+@mixin boton  {
+    background-color: #d9c487;
+    border-color: #d9c487;
+    color: #06060b;
+    font-size: large;
+    font-weight:700;
+}
+
+/* Grid */
+
+@mixin grid ($display, $grid-template-columns, $grid-template-rows, $gap, $justify,$grid-template-areas) {
+    display: $display;
+    grid-template-columns: $grid-template-columns;
+    grid-template-rows: $grid-template-rows;
+    gap: $gap;
+    justify-items: $justify;
+    grid-template-areas: $grid-template-areas;
+}
+
+/* Flex */
+@mixin flex ($display, $flex-direction, $align-items){
+    display: $display;
+    flex-direction: $flex-direction;
+    align-items: $align-items;
+}
+
+/* Hover-None - Responsive */
+@mixin hover-none  {
+    transform: none!important;
+    transition: none!important;
+}

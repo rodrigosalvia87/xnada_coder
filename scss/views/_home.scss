@@ -4,8 +4,9 @@
 }
 
 .txt__bio {
-  display: flex justify-content center;
+  display: flex; 
+  justify-content: center;
   flex-direction: column;
   text-align: justify;
-  font-size: 2em;
+  font-size: $text-small1;
 }

@@ -26,11 +26,8 @@ margin-top: 5rem;
 
 
 .boton__ticket {
-  background-color: #d9c487;
-  border-color: #d9c487;
-  color: #06060b;
+  @include boton;
   font-size: large;
-  font-weight:700;
 
   a {
     text-decoration: none;

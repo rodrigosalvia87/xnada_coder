@@ -210,6 +210,55 @@ html {
     background-color: #53d0bf;
     border-color: #53d0bf; }
 
+.container__tienda {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.card-title {
+  font-size: 2em;
+  font-weight: 700; }
+
+.card-text {
+  font-size: 1.8em; }
+
+.card-text2 {
+  font-size: 2em;
+  font-weight: 500; }
+
+.btn__contacto {
+  background-color: #d9c487;
+  border-color: #d9c487;
+  color: #06060b;
+  font-size: large;
+  font-weight: 700;
+  font-size: medium;
+  margin-top: 7px;
+  text-decoration: none; }
+
+.modal__contenedor {
+  display: flex;
+  align-items: center;
+  gap: 3rem; }
+
+.img__carrito {
+  width: 250px;
+  padding: 20px; }
+
+.modal-body {
+  font-size: 2em;
+  font-weight: 400; }
+
+.modal-footer {
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  align-items: stretch; }
+
+#precioFinal {
+  font-size: 2em;
+  font-weight: 500; }
+
 /* --------------------------------- RESPONSIVE -------------------------------------- */
 /* --------------------------------Mobile - Home ------------------------------------- */
 @media only screen and (max-width: 670px) {

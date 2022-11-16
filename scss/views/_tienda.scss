@@ -1,0 +1,60 @@
+.container__tienda{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+    
+}
+
+.card-title{
+    font-size: $text-small1;
+    font-weight: 700;
+}
+
+.card-text{
+    font-size: $text-small2;
+}
+
+.card-text2{
+    font-size: $text-small1;
+    font-weight: 500;
+}
+
+.btn__contacto {
+    @include boton;
+    font-size: medium;
+    margin-top: 7px;
+    text-decoration: none;
+}
+
+
+.modal__contenedor{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.img__carrito{
+    width: 250px;
+    padding: 20px;
+}
+
+.modal-body{
+    font-size: $text-small1;
+    font-weight: 400;
+}
+
+
+.modal-footer{
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: stretch;
+}
+
+
+#precioFinal{
+    font-size: $text-small1;
+    font-weight: 500;
+    
+}

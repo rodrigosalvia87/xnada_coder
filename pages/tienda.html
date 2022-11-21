@@ -16,7 +16,7 @@
   <!-- CSS PROPIO -->
   <link rel="stylesheet" href="../css/styles.css">
   <script defer src="../js/productos.js"></script>
-  <script defer src="../js/dom.js"></script>
+  <script defer src="../js/main.js"></script>
 
 
 </head>
@@ -76,11 +76,13 @@
             <p>Tu carrito está vacío.</p>
           </div>
           <div class="modal-footer">
-            <div id="precioFinal">
-              <p>Importe Total: $</p>
-            </div>
             <button type="button" class="btn btn-secondary" id="vaciarCarrito">Vaciar Carrito</button>
-            <button type="button" class="btn btn-success">Confirmar Compra</button>
+            <button type="button" class="btn btn-success" id="confirmarCompra">Confirmar Compra</button>
+            <div class="precio__final">
+              <p > Total a Pagar: $  </p>
+              <p  id="importeTotal"></p>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -117,7 +119,7 @@
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
 
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 </html>

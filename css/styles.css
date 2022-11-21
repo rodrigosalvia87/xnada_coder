@@ -255,7 +255,9 @@ html {
   align-content: stretch;
   align-items: stretch; }
 
-#precioFinal {
+.precio__final {
+  display: flex;
+  justify-content: center;
   font-size: 2em;
   font-weight: 500; }
 

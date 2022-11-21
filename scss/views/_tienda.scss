@@ -53,7 +53,9 @@
 }
 
 
-#precioFinal{
+.precio__final{
+    display: flex;
+    justify-content: center;
     font-size: $text-small1;
     font-weight: 500;
     
